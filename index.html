@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='all.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>9 DOTS</title>
+</head>
+
+<body>
+    <div class="dots">
+        <span style="--i:0;--x:0;--y:0;"><i class="fa-regular fa-droplet"></i></span>
+        <span style="--i:1;--x:-1;--y:0;"><i class="fa-solid fa-moon"></i></span>
+        <span style="--i:2;--x:1;--y:0;"><i class="fa-solid fa-message"></i></span>
+        <span style="--i:3;--x:0;--y:1;"><i class="fa-regular fa-clock"></i></span>
+        <span style="--i:4;--x:0;--y:-1;"><i class="fa-regular fa-camera"></i></span>
+        <span style="--i:5;--x:1;--y:-1;"><i class="fa-regular fa-bell"></i></span>
+        <span style="--i:6;--x:-1;--y:1;"><i class="fa-regular fa-gem"></i></span>
+        <span style="--i:7;--x:-1;--y:-1;"><i class="fa-regular fa-stopwatch"></i></span>
+        <span style="--i:8;--x:1;--y:1;"><i class="fa-regular fa-gamepad"></i></span>
+    </div>
+    <script>
+        let navigation = document.querySelector('.dots');
+        navigation.addEventListener('click', _ => navigation.classList.toggle('active'));
+    </script>
+</body>
+
+</html>
